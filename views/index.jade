@@ -68,10 +68,10 @@ block content
           li
             a(href='./') Emergency
 
-      .container
+      div.col-md-10
         .row
           // Carousel
-          div.carousel.slide(data-ride='carousel').col-md-10
+          div.carousel.slide(data-ride='carousel')
             ol.carousel-indicators
               li.active(data-target='#myCarousel', data-slide-to='0')
               li(data-target='#myCarousel', data-slide-to='1')
@@ -110,5 +110,5 @@ block content
               span.glyphicon.glyphicon-chevron-left
             a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
               span.glyphicon.glyphicon-chevron-right
-
-        .div(id="map")
+        .row
+          div(id="map")
