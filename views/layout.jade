@@ -26,4 +26,61 @@ html
       }
 
 body
+  .container
+    // Static navbar
+    .navbar.navbar-default(role='navigation')
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') Onetono
+        .navbar-collapse.collapse.navbar-ex1-collapse
+          ul.nav.navbar-nav
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                | Locations
+                span.caret
+              ul.dropdown-menu(role='menu')
+                li
+                  a(href='#') Johannesburg
+                li
+                  a(href='#') Cape Town
+                li
+                  a(href='#') Durban
+                li.divider
+                li.dropdown-header Recommended
+                li
+                  a(href='#') Local Location
+                li
+                  a(href='#') Interesting Location
+            li
+              a(href='./') VPN Portal
+            li
+              a(href='./') Free Wifi
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                | About
+                span.caret
+              ul.dropdown-menu(role='menu')
+                li
+                  a(href='#') Contact Us
+                li
+                  a(href='#') Testimonials
+
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='./') Register
+            li
+              a(href='./') Login
+
+          div.col-sm-3.col-md-3
+            form.navbar-form.navbar-right(role='search')
+              div.input-group
+                input.form-control(type="text", placeholder="Search for...")
+                span.input-group-btn
+                  button.btn.btn-info(type='button')
+                    span.glyphicon.glyphicon-search
   block content
